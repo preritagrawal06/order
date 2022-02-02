@@ -1,0 +1,156 @@
+body{
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color:  hsl(225, 100%, 94%);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
+    
+}
+.container img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.container h1{
+    color: hsl(228, 45%, 44%);
+    margin: 10px;
+}
+.container p{
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.container .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px;
+    padding: 20px;
+    width: 90%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.container .price .pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 5px;
+}
+.container .price img{
+    margin-right: 5px;
+}
+.container .price .pricing h4{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.container .price .pricing p{
+    margin: 10px;
+}
+.container .price a{
+    font-size: 20px;
+    color: hsl(245, 75%, 52%);
+    font-family: sans-serif;
+}
+.payment{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: 0;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 700;
+    font-family: helvetica;
+    width: 90%;
+    box-shadow: 1px 10px 20px hsl(224, 23%, 55%);
+}
+.cancel{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 0;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+.attribution{
+    margin-bottom: 5px;
+}
+
+.payment:hover{
+    background-color: #766CF1;
+}
+.cancel:hover{
+    color: black;
+}
+.container .price a:hover{
+    text-decoration: none;
+    color: #766CF1;
+}
+@media screen and (max-width: 400px) {
+    .container .price{
+        margin: 17px;
+    }
+}
+@media screen and (max-width: 375px) {
+    body{
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@media screen and (max-width: 300px){
+    .container .price{
+        padding: 5px;
+    }
+ .container .price .pricing img{
+     width: 40px;
+ }
+ .container .price .pricing h4{
+     font-size: 15px;
+ }
+ .container .price .pricing p{
+     font-size: 13px;
+ }
+ .container .price a{
+    font-size: 12px;
+ }
+ .payment{
+     font-size: 14px;
+ }
+}
+@media screen and (max-width: 350px){
+    .container .price{
+        padding: 5px;
+    }
+ .container .price .pricing img{
+     width: 40px;
+ }
+ .container .price .pricing h4{
+     font-size: 15px;
+ }
+ .container .price .pricing p{
+     font-size: 13px;
+ }
+ .container .price a{
+    font-size: 12px;
+ }
+ .payment{
+     font-size: 14px;
+ }
+}
